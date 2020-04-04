@@ -1,9 +1,5 @@
-import React, { Component } from "react"
-import ReactDOM from "react-dom"
-import { observer } from "mobx-react"
+import React from 'react';
 
-const TimerView = observer(({ timer }) => (
-    <p>timer.remainingSeconds</p>
-));
+const TimerView = ({ seconds }) => <p>{seconds}</p>;
 
-return TimerView;
+export default TimerView;
